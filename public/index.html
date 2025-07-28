@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduPortal Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to EduPortal Hub</h1>
+
+    <!-- Login with Google Button -->
+    <button id="loginBtn">Login with Google</button>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard" style="display:none;">
+      <h2>Subjects and Courses</h2>
+      <ul>
+        <li><strong>Python Course:</strong>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=WGJJIrtnfpk" target="_blank">English</a></li>
+            <li><a href="https://www.youtube.com/watch?v=gfDE2a7MKjA" target="_blank">Hindi</a></li>
+          </ul>
+        </li>
+        <li><strong>Java Course:</strong>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=grEKMHGYyns" target="_blank">English</a></li>
+            <li><a href="https://www.youtube.com/watch?v=UmnCZ7-9yDY" target="_blank">Hindi</a></li>
+          </ul>
+        </li>
+        <li><strong>Web Technology:</strong>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=3JluqTojuME" target="_blank">English</a></li>
+            <li><a href="https://www.youtube.com/watch?v=HcOc7P5BMi4" target="_blank">Hindi</a></li>
+          </ul>
+        </li>
+        <li><strong>JavaScript:</strong>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=PkZNo7MFNFg" target="_blank">English</a></li>
+            <li><a href="https://www.youtube.com/watch?v=hKB-YGF14SY" target="_blank">Hindi</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Free Certificate Sites</h2>
+      <ul>
+        <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
+        <li><a href="https://www.edx.org" target="_blank">edX</a></li>
+      </ul>
+
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <textarea id="message" name="message" placeholder="Describe your issue" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase and Script -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
